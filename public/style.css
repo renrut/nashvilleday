@@ -26,14 +26,25 @@ h1{
 	height: 5px;
     border-radius: 1em;
     text-align: center;
-    box-shadow: 9px 9px 0px black;
+    -webkit-filter: drop-shadow(9px 9px 0px rgba(0,0,0,.8));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 
 
 }
 
 input{
+
     width:150px;
     height:150px;
+    outline: none;
+
+}
+
+input:hover{
+    -webkit-filter: invert(100%);
+
 }
 
 
