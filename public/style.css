@@ -96,6 +96,11 @@ p{
 
 }
 
+#active:hover{
+	 color: #ababab;
+
+}
+
 
 button:hover{
 		background-color: #dd0000;
