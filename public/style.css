@@ -5,7 +5,9 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: #002D65;
+ /* background-color: #002D65;*/
+    background-color: #800000;
+
         
 }
 
@@ -20,7 +22,7 @@ h1{
 
 
 #buttonWrapper{
-	margin-left: 70%;
+	margin-left: 45%;
 	margin-right: auto;
 	width: 5px;
 	height: 5px;
@@ -43,7 +45,7 @@ input{
 }
 
 input:hover{
-    -webkit-filter: invert(100%);
+ 	-webkit-filter: hue-rotate(300deg);
 
 }
 
