@@ -12,7 +12,7 @@ html {
 }
 
 h1{
-	font-family: courier;
+	font-family: Rockwell;
     color: white;
     text-align: center;
 	text-shadow:9px 9px 0px black;
@@ -61,7 +61,7 @@ input:hover{
 
 
 p{
-	font-family: courier;
+	font-family: Rockwell;
     color: white;
     text-align: center;
     font-size: 3em;
@@ -69,14 +69,14 @@ p{
 }
 
 #restName {
-    font-family: courier;
+    font-family: Rockwell;
     color: white;
     text-align: center;
     font-size: 5em;
 }
 
 #restType {
-    font-family: courier;
+    font-family: Rockwell;
     color: white;
     text-align: center;
     font-size: 3em;
@@ -91,7 +91,7 @@ p{
 
 
 #active {
-    font-family: courier;
+    font-family: Rockwell;
     color: white;
     text-align: center;
     font-size: 5em;
