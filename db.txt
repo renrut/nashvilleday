@@ -1,0 +1,121 @@
+-- phpMyAdmin SQL Dump
+-- version 2.8.0.1
+-- http://www.phpmyadmin.net
+-- 
+-- Host: hostcentric
+-- Generation Time: Mar 21, 2015 at 06:30 PM
+-- Server version: 5.5.32
+-- PHP Version: 4.4.9
+-- 
+-- Database: `nashville_db1`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `Activities`
+-- 
+
+DROP TABLE IF EXISTS `Activities`;
+CREATE TABLE IF NOT EXISTS `Activities` (
+  `Activity` varchar(70) COLLATE utf8_unicode_ci NOT NULL,
+  `URL` varchar(90) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `Price` varchar(19) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `ID` int(2) DEFAULT NULL,
+  PRIMARY KEY (`Activity`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 
+-- Dumping data for table `Activities`
+-- 
+
+INSERT INTO `Activities` VALUES ('See a concert at the Exit/In', 'http://www.exitin.com/', '$10-30', 1);
+INSERT INTO `Activities` VALUES ('Go for a walk and visit the Parthenon in Centennial Park', 'http://www.nashville.gov/Parks-and-Recreation/Parks/Centennial-Park.aspx', '$7', 2);
+INSERT INTO `Activities` VALUES ('Go for a hike in Percy Warner park', 'http://www.nashville.gov/Parks-and-Recreation/Parks/Warner-Parks.aspx', 'Free', 3);
+INSERT INTO `Activities` VALUES ('Fish at Percy Priest lake', 'http://www.percypriestlake.org/', 'Free (Fishing Gear)', 4);
+INSERT INTO `Activities` VALUES ('See a concert at the Ryman', 'http://ryman.com/', '', 5);
+INSERT INTO `Activities` VALUES ('Go to the Grand Ole Opry', 'http://www.opry.com/', '', 6);
+INSERT INTO `Activities` VALUES ('Walk aroung the Opryland Hotel', 'http://www.marriott.com/hotels/travel/bnago-gaylord-opryland-resort-and-convention-center/', '', 7);
+INSERT INTO `Activities` VALUES ('Visit the Nashville Zoo at Grassmere', 'http://www.nashvillezoo.org/', '', 8);
+INSERT INTO `Activities` VALUES ('Spend a Day or go Bowling at the Pinewood Social', 'http://pinewoodsocial.com/', '', 9);
+INSERT INTO `Activities` VALUES ('Go Thrift-Shopping', 'http://www.yelp.com/c/nashville/thrift_stores', '', 10);
+INSERT INTO `Activities` VALUES ('Go See a Movie at the Belcourt', 'http://www.belcourt.org/', '', 11);
+INSERT INTO `Activities` VALUES ('See a show at the Bluebird Cafe', 'http://bluebirdcafe.com/index.cfm', '', 12);
+INSERT INTO `Activities` VALUES ('Go to a Predator''s Game', 'http://predators.nhl.com/club/schedule.htm', '', 13);
+INSERT INTO `Activities` VALUES ('Walk around Downtown', 'http://www.nashvilledowntown.com/', '', 14);
+INSERT INTO `Activities` VALUES ('Set up a Hammock in Percy Warner park', 'http://www.nashville.gov/Parks-and-Recreation/Parks/Warner-Parks.aspx', '', 15);
+INSERT INTO `Activities` VALUES ('Drive out to Cummin Falls State Park (Bring your swimsuit if its warm)', 'http://tnstateparks.com/parks/about/cummins-falls', '', 16);
+INSERT INTO `Activities` VALUES ('Go Skydiving at Music City Skydiving', 'https://www.facebook.com/musiccityskydiving', '', 17);
+INSERT INTO `Activities` VALUES ('Spend a day at the Frist', 'http://fristcenter.org/', '', 18);
+INSERT INTO `Activities` VALUES ('Go to the Hermitage', 'http://thehermitage.com/', '', 19);
+INSERT INTO `Activities` VALUES ('Have a Blast at the Adventure Science Center', 'http://www.adventuresci.org/', '', 20);
+INSERT INTO `Activities` VALUES ('Bring A Few Friends and Play Laser Tag', 'http://www.laserquest.com/public/locations/TN-Nashville.cfm', '$8.50', 21);
+INSERT INTO `Activities` VALUES ('Play Some Paintball at Nashville Paintball', 'http://nashvillepaintball.com/', '$50', 22);
+INSERT INTO `Activities` VALUES ('Indoor Trampoline Park at Sky High network', 'http://nas.jumpskyhigh.com/', '', 23);
+INSERT INTO `Activities` VALUES ('Hike around Radnor Lake', 'http://radnorlake.org/', '', 24);
+INSERT INTO `Activities` VALUES ('See a concert tonight', 'http://www.visitmusiccity.com/visitors/events/upcomingconcerts', '', 25);
+INSERT INTO `Activities` VALUES ('Fish or Hike at Long Hunter State Park', 'http://tnstateparks.com/parks/about/long-hunter', '', 26);
+INSERT INTO `Activities` VALUES ('Try to get to the top of the Spire of the Bat Building', 'http://www.grumpysbailbonds.com/', '', 27);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `Restaurants`
+-- 
+
+DROP TABLE IF EXISTS `Restaurants`;
+CREATE TABLE IF NOT EXISTS `Restaurants` (
+  `Name` varchar(29) COLLATE utf8_unicode_ci NOT NULL,
+  `Type` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `DaysOpen` varchar(7) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `Price` varchar(4) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `Comments` varchar(75) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM AUTO_INCREMENT=42 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=42 ;
+
+-- 
+-- Dumping data for table `Restaurants`
+-- 
+
+INSERT INTO `Restaurants` VALUES ('Bros Cajun Cuisine', 'Cajun', 'Mon-Fri', '$$', '', 1);
+INSERT INTO `Restaurants` VALUES ('The Smiling Elephant', 'Thai', 'Mon-Sat', '$$', '', 2);
+INSERT INTO `Restaurants` VALUES ('Fattoush Cafe', 'Mediterranean', 'Mon-Sat', '$', '', 3);
+INSERT INTO `Restaurants` VALUES ('Cori''s Doghouse', 'Hot Dogs', 'Sun-Sat', '$', '', 4);
+INSERT INTO `Restaurants` VALUES ('Pinewood Social', 'American', 'Sun-Mon', '$$$', 'Expensive, but delicious. Not a good date spot.', 5);
+INSERT INTO `Restaurants` VALUES ('Hattie B''s', 'Hot Chicken', 'Mon-Sat', '$$', '', 6);
+INSERT INTO `Restaurants` VALUES ('The Pharmacy', 'Burgers', 'Sun-Mon', '$$', '', 7);
+INSERT INTO `Restaurants` VALUES ('Urban Grub', 'Farm to Table Meat', 'Tue-Sun', '$$$', '', 8);
+INSERT INTO `Restaurants` VALUES ('Burger Up', 'Burgers', 'Sun-Mon', '$$', '', 9);
+INSERT INTO `Restaurants` VALUES ('Loveless Cafe', 'Southern', 'Sun-Sat', '$$', 'Kinda far, but I''ve heard a lot about it', 10);
+INSERT INTO `Restaurants` VALUES ('Peg Leg Porker', 'BBQ', 'Mon-Sat', '$$', '', 11);
+INSERT INTO `Restaurants` VALUES ('King Solomon''s Gyros', 'Mediterranean', 'Sun-Sat', '$', '', 12);
+INSERT INTO `Restaurants` VALUES ('That 12th Taco Truck', 'Taco', '', '$', '', 13);
+INSERT INTO `Restaurants` VALUES ('312 Pizza Company', 'Pizza', 'Sun-Sat', '$$', '', 14);
+INSERT INTO `Restaurants` VALUES ('McDonald''s', 'Trash', 'Sun-Sat', '$', '', 15);
+INSERT INTO `Restaurants` VALUES ('Pfunky Griddle', 'Daytime Breakfast', 'Tue-Sun', '$', 'Cook your own pancakes', 16);
+INSERT INTO `Restaurants` VALUES ('400 Degrees', 'Hot Chicken', 'Tue-Sat', '$', '', 17);
+INSERT INTO `Restaurants` VALUES ('Rolf and Daughters', 'American', 'Sun-Sat', '$$$', '', 18);
+INSERT INTO `Restaurants` VALUES ('Krispy Kreme Dumpster', 'Trash', 'Sun-Sat', 'FREE', '', 19);
+INSERT INTO `Restaurants` VALUES ('Thai Phooket', 'Thai', 'Sun-Sat', '$', '', 20);
+INSERT INTO `Restaurants` VALUES ('Woodlands', 'Indian', 'Tue-Sun', '$$', 'Vegetarian', 21);
+INSERT INTO `Restaurants` VALUES ('Sitar', 'Indian', 'Sun-Sat', '$$', 'Lunch Buffet', 22);
+INSERT INTO `Restaurants` VALUES ('Monells', 'Southern Comfort', '', '$$', 'Open large tables go with a group', 23);
+INSERT INTO `Restaurants` VALUES ('Mas Tacos', 'Taco', 'Mon-Sat', '$', 'Good tacos - weak horchata', 24);
+INSERT INTO `Restaurants` VALUES ('Local Taco', 'Taco', 'Mon-Sun', '$', '', 25);
+INSERT INTO `Restaurants` VALUES ('Burger Republic', 'Burgers', 'Mon-Sun', '$$', 'Good Milkshakes!', 26);
+INSERT INTO `Restaurants` VALUES ('Martin''s BBQ', 'BBQ', 'Mon-Sun', '$', 'Dope Brisket', 27);
+INSERT INTO `Restaurants` VALUES ('Samurai', 'Sushi', 'Mon-Sat', '$', 'Best sushi in Nashville', 28);
+INSERT INTO `Restaurants` VALUES ('Bobbie''s Dairy Dip', 'Ice Cream/Burgers', 'Mon-Sun', '$', 'No indoor seating-great for warm nights', 29);
+INSERT INTO `Restaurants` VALUES ('Wild Cow', 'Vegetarian', 'Wed-Mon', '$$', 'Vegetarian', 30);
+INSERT INTO `Restaurants` VALUES ('DeSano''s', 'Pizza', 'Sun-Mon', '$$', 'Parking is expensive if you don''t get a spot in their lot.', 31);
+INSERT INTO `Restaurants` VALUES ('Flip Side', 'Chicken', 'Sun-Mon', '$$', '', 32);
+INSERT INTO `Restaurants` VALUES ('Edley''s BBQ', 'BBQ', 'Sun-Mon', '$$', 'BBQ Nachos are bomb', 33);
+INSERT INTO `Restaurants` VALUES ('Jack''s BBQ', 'BBQ', 'Mon-Sat', '$$', '', 34);
+INSERT INTO `Restaurants` VALUES ('Bombay Palace', 'Indian', 'Sun-Mon', '$$', '', 35);
+INSERT INTO `Restaurants` VALUES ('Cook Out', 'Trash', 'Sun-Mon', '$', 'Good Trash', 36);
+INSERT INTO `Restaurants` VALUES ('Bolton''s Spicy Chicken + Fish', 'Hot Chicken and Fish', 'Sun-Mon', '$', 'This Shit will make you hurt', 37);
+INSERT INTO `Restaurants` VALUES ('Ninki', 'Sushi', 'Sun-Mon', '$$', 'Delicious but kind of slow. Make a reservation. They have a discount menu.', 38);
+INSERT INTO `Restaurants` VALUES ('Love, Peace, and Pho', 'Pho', 'Wed-Mon', '$$', 'Expensive for Pho, better than bamboo bistro', 39);
+INSERT INTO `Restaurants` VALUES ('Star Bagel', 'Breakfast', 'Sun-Sat', '$', 'can be crowded on weekend mornings', 40);
+INSERT INTO `Restaurants` VALUES ('Lucky Belly', 'Sushi Burger Fusion', 'Sun-Sat', '$$', '', 41);
