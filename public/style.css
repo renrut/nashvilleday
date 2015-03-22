@@ -6,15 +6,15 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: #FFF1E3;
+  background-color: #002D65;
         
 }
 
 h1{
 	font-family: courier;
-    color: #002D65;
+    color: white;
     text-align: center;
-	text-shadow:9px 9px 0px grey;
+	text-shadow:9px 9px 0px black;
     font-size: 5em;
 }
 
@@ -39,14 +39,14 @@ input{
 
 #restName {
     font-family: courier;
-    color: black;
+    color: white;
     text-align: center;
     font-size: 5em;
 }
 
 #restType {
     font-family: courier;
-    color: black;
+    color: white;
     text-align: center;
     font-size: 3em;
 
@@ -61,7 +61,7 @@ input{
 
 #active {
     font-family: courier;
-    color: black;
+    color: white;
     text-align: center;
     font-size: 5em;
 
