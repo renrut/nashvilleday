@@ -1,7 +1,6 @@
 
 html { 
     
-  /*background: url("http://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Tennessee.svg/2000px-Flag_of_Tennessee.svg.png") no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -27,6 +26,7 @@ h1{
 	height: 5px;
     border-radius: 1em;
     text-align: center;
+    box-shadow: 9px 9px 0px black;
 
 
 }
