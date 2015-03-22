@@ -50,6 +50,14 @@ input:hover{
 }
 
 
+p{
+	font-family: courier;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+
+}
+
 #restName {
     font-family: courier;
     color: white;
