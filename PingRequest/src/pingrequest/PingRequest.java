@@ -31,10 +31,10 @@ public class PingRequest {
         // TODO code application logic here
         PingRequest http = new PingRequest();
         
-        System.out.println("Test 1 - Send Http GET request");
+        System.out.println("Test 1 - Send HTTP GET request");
         http.sendGet();
         
-        System.out.println("\n Test 2 - Send Http POST request");
+        System.out.println("\n Test 2 - Send HTTP POST request");
         http.sendPost();
     }
     
