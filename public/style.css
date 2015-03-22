@@ -36,6 +36,14 @@ h1{
 
 }
 
+:link {
+	color: #ffffff;
+}
+:visited {
+	color: #ababab;
+}
+
+
 input{
 
     width:150px;
