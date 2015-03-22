@@ -16,8 +16,8 @@ function handle_database(req, res) {
     pool.getConnection(function (err, connection) {
         if (err) {
             console.log(err);
-            connection.release();
             res.json({ "code": 100, "status": "Error in connection database" });
+            connection.release();
             return;
         }
         var resRows = null;
